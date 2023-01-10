@@ -1,0 +1,36 @@
+@use "../../styles/assets" as *;
+
+.landing {
+  background: url("../images/bg.png");
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.479);
+  background-blend-mode: darken;
+}
+.landing__heading {
+  color: #fff;
+  font-size: 2.5rem;
+  width: 32%;
+}
+
+.landing__location {
+  display: flex;
+  flex-direction: column;
+}
+
+.location__box {
+  background: white;
+  border-radius: 5px;
+  padding: 1rem 3rem;
+  display: flex;
+  gap: 1rem;
+  margin: 0 1.2rem;
+  justify-content: space-between;
+
+  button {
+    background: $blue;
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+}
