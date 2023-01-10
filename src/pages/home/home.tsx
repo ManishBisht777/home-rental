@@ -7,7 +7,8 @@ import g1 from "../../images/g1.svg";
 import g2 from "../../images/g2.svg";
 import g3 from "../../images/g3.svg";
 import g4 from "../../images/g4.svg";
-
+import user from "../../images/icons/person.svg";
+import cover from "../../images/cover.svg";
 const Home = () => {
   return (
     <main>
@@ -219,6 +220,26 @@ const Home = () => {
             <button>Add a New Property</button>
           </form>
         </div>
+      </section>
+
+      <section className="testimonial">
+        <div className="testimonial__card">
+          <p className="testi__desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+            interdum nisl et nunc facilisis, a commodo eros mollis. Nunc vel
+            pellentesque est. Curabitur at odio sit amet libero vulputate
+            efficitur ac nec justo. Nulla vitae mauris quam. Nulla quam massa,
+            faucibus id pretium ac, mattis eu velit. Donec sed risus a lacus
+            fringilla finibus.
+          </p>
+          <div className="user__card">
+            <img src={user} alt="" />
+            <p>
+              Manish Bisht <span>Property Owner</span>
+            </p>
+          </div>
+        </div>
+        <img className="cover" src={cover} alt="" />
       </section>
     </main>
   );
