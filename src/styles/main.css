@@ -187,6 +187,123 @@ html {
   border-radius: 5px 0 0 5px;
 }
 
+.more {
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+  color: #18191f;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 40%;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+}
+.row:first-child {
+  align-items: flex-end;
+}
+
+.more__info {
+  width: 50%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+}
+.more__info h2 {
+  font-size: 2rem;
+}
+
+.add__property {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.form__container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-direction: column;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  text-transform: capitalize;
+  box-shadow: 0px 4px 63px rgba(0, 0, 0, 0.15);
+  padding: 2rem;
+}
+.form__container h3 {
+  color: #f4511e;
+  font-size: 1.5rem;
+}
+.form__container p {
+  font-weight: 600;
+}
+.form__container span {
+  color: red;
+}
+.form__container form {
+  display: flex;
+  flex-direction: column;
+}
+.form__container button {
+  margin: auto;
+  margin-top: 2rem;
+  background: #f4511e;
+  padding: 1rem 4rem;
+  color: #fff;
+  border-radius: 3px;
+}
+.form__container input,
+.form__container textarea {
+  padding: 0.5rem;
+  background: #e6e6e6;
+  border: 1px solid rgba(0, 0, 0, 0.164);
+  border-radius: 3px;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+  padding-bottom: 2rem;
+}
+
+.upload {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.upload__box {
+  padding: 2rem;
+  border: 2px dashed #f4511e;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.supported__format {
+  font-size: 0.7rem;
+  color: #818181;
+}
+
 .card {
   max-width: 17rem;
   color: #18191f;

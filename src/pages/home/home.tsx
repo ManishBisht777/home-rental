@@ -3,6 +3,10 @@ import search from "../../images/icons/search.svg";
 import feature from "../../images/feature.svg";
 import houseicon from "../../images/icons/house.svg";
 import Card from "../../components/card/card";
+import g1 from "../../images/g1.svg";
+import g2 from "../../images/g2.svg";
+import g3 from "../../images/g3.svg";
+import g4 from "../../images/g4.svg";
 
 const Home = () => {
   return (
@@ -98,6 +102,122 @@ const Home = () => {
           <button>2</button>
           <button>3</button>
           <button>next</button>
+        </div>
+      </section>
+
+      <section className="more">
+        <div className="gallery">
+          <div className="row">
+            <div>
+              <img src={g2} alt="" />
+            </div>
+            <div>
+              <img src={g1} alt="" />
+            </div>
+          </div>
+          <div className="row">
+            <div>
+              <img src={g3} alt="" />
+            </div>
+            <div>
+              <img src={g4} alt="" />
+            </div>
+          </div>
+        </div>
+        <div className="more__info">
+          <h2>Flexibility and options to suit your lifestyle.</h2>
+          <p>
+            You need it? We got it. We make finding your next home easy,
+            comfortable, and simple. From our happiness guarantee to our
+            selective roommate finder option. We provide you the flexibility
+            that you most desire.
+          </p>
+          <button>Search Rooms</button>
+        </div>
+      </section>
+      <section className="add__property">
+        <p>
+          Your property with us and be Confident that Your Room will be Filled
+          Out!
+        </p>
+
+        <div className="form__container">
+          <h3>Add a New Property</h3>
+          <form action="">
+            <div className="grid">
+              <div>
+                <p>
+                  name <span>*</span>
+                </p>
+                <input type="text" placeholder="enter name" />
+              </div>
+              <div>
+                <p>
+                  name <span>*</span>
+                </p>
+                <input type="text" placeholder="enter name" />
+              </div>
+              <div>
+                <p>
+                  name <span>*</span>
+                </p>
+                <input type="text" placeholder="enter name" />
+              </div>
+              <div>
+                <p>
+                  name <span>*</span>
+                </p>
+                <input type="text" placeholder="enter name" />
+              </div>
+              <div>
+                <p>
+                  name <span>*</span>
+                </p>
+                <input type="text" placeholder="enter name" />
+              </div>
+              <div>
+                <p>
+                  name <span>*</span>
+                </p>
+                <input type="text" placeholder="enter name" />
+              </div>
+              <div>
+                <p>
+                  name <span>*</span>
+                </p>
+                <input type="text" placeholder="enter name" />
+              </div>
+              <div>
+                <p>
+                  name <span>*</span>
+                </p>
+                <input type="text" placeholder="enter name" />
+              </div>
+            </div>
+            <div>
+              <p>
+                name <span>*</span>
+              </p>
+              <textarea
+                name=""
+                id=""
+                rows={5}
+                placeholder="Enter Description"
+              ></textarea>
+            </div>
+
+            <div className="upload">
+              <p>Upload Photos</p>
+              <div className="upload__box">
+                <p>
+                  Drag your images here, or <span>Browse</span>
+                </p>
+                <p className="supported__format">Supported: JPG, JPEG, PNG</p>
+              </div>
+            </div>
+
+            <button>Add a New Property</button>
+          </form>
         </div>
       </section>
     </main>
