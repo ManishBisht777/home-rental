@@ -1,12 +1,16 @@
-import React from "react";
+import logo from "../../images/icons/logo.svg";
 
 const Navbar = () => {
   return (
-    <nav>
-      i am navbar Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea
-      facilis natus rerum blanditiis a enim quasi exercitationem inventore
-      similique recusandae at maiores impedit laudantium, quibusdam aliquam
-      alias id architecto cumque.
+    <nav className="navbar">
+      <img src={logo} alt="home rental logo" />
+      <button className="hamburger">ham</button>
+      <ul className="nav-links">
+        <li>Home</li>
+        <li>Landlords</li>
+        <li>Tenants</li>
+        <li>Contact Us</li>
+      </ul>
     </nav>
   );
 };

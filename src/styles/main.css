@@ -53,6 +53,25 @@ html {
   min-height: 100vh;
 }
 
+.navbar {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2rem;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  flex-grow: 0.8;
+}
+
 .landing {
   background: url("../images/bg.png");
   display: flex;
@@ -60,6 +79,7 @@ html {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.479);
   background-blend-mode: darken;
+  padding-top: 10vh;
 }
 
 .landing__heading {
@@ -75,7 +95,7 @@ html {
 
 .location__box {
   background: white;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 1rem 3rem;
   display: flex;
   gap: 1rem;

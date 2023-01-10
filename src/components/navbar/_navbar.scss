@@ -1,1 +1,20 @@
 @use "../../styles/assets" as *;
+
+.navbar {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2rem;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  flex-grow: 0.8;
+}
