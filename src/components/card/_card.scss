@@ -1,0 +1,40 @@
+@use "../../styles/assets" as *;
+
+.card {
+  max-width: 17rem;
+  color: $black;
+  border: 2px solid rgba(0, 0, 0, 0.14);
+  border-radius: 20px;
+}
+
+.prop__info {
+  padding: 1rem;
+}
+
+.prop__name {
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+}
+
+.prop__type {
+  color: $gray;
+  font-size: 0.7rem;
+}
+
+.prop__price {
+  color: $orange;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.prop__features {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prop__feature {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}

@@ -106,4 +106,122 @@ html {
   background: #23a6f0;
   padding: 0.5rem;
   border-radius: 5px;
+}
+
+.feature {
+  padding: 3rem;
+  color: #18191f;
+}
+
+.feature__box {
+  display: flex;
+}
+
+.feature__img {
+  width: 40%;
+  padding: 3rem;
+}
+
+.feature__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: center;
+  align-content: center;
+}
+
+.feature__unique {
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+  gap: 1rem;
+}
+.feature__unique div {
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.301);
+}
+.feature__unique div img {
+  width: 2rem;
+}
+.feature__unique p {
+  font-weight: 600;
+}
+
+.property {
+  padding: 3rem;
+}
+
+.property__heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.property__box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+.pagination button {
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.144);
+  color: #f4511e;
+  background: none;
+  text-transform: capitalize;
+}
+.pagination button:last-child {
+  border-radius: 0 5px 5px 0px;
+}
+.pagination button:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.card {
+  max-width: 17rem;
+  color: #18191f;
+  border: 2px solid rgba(0, 0, 0, 0.14);
+  border-radius: 20px;
+}
+
+.prop__info {
+  padding: 1rem;
+}
+
+.prop__name {
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+}
+
+.prop__type {
+  color: #818181;
+  font-size: 0.7rem;
+}
+
+.prop__price {
+  color: #f4511e;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.prop__features {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prop__feature {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
