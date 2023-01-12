@@ -89,6 +89,12 @@ html {
   .hamburger {
     display: flex;
   }
+  .hamburger img {
+    width: 2rem;
+  }
+  .nav-logo {
+    width: 5rem;
+  }
   .navbar {
     justify-content: space-between;
   }
@@ -117,9 +123,12 @@ html {
   .close {
     position: absolute;
     display: flex;
-    top: 3rem;
-    right: 2rem;
+    top: 1rem;
+    right: 1rem;
     z-index: 1;
+  }
+  .close img {
+    width: 2rem;
   }
 }
 .landing {
@@ -226,6 +235,12 @@ html {
   justify-content: space-between;
   margin-bottom: 3rem;
 }
+.property__heading button {
+  background: #f4511e;
+  padding: 1rem 2rem;
+  color: #fff;
+  border-radius: 3px;
+}
 
 .property__box {
   display: flex;
@@ -286,6 +301,15 @@ html {
 }
 .more__info h2 {
   font-size: 2rem;
+}
+.more__info button {
+  background: #f4511e;
+  padding: 1rem 2rem;
+  color: #fff;
+  border-radius: 3px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .add__property {
@@ -432,13 +456,18 @@ html {
   .feature__unique {
     align-items: center;
     text-align: center;
+    width: 7rem;
   }
   .property {
     padding: 1rem;
     margin-top: 2rem;
   }
+  .property__heading button {
+    padding: 0.5rem 1rem;
+  }
   .more {
     background-color: rgba(235, 131, 72, 0.082);
+    padding: 2rem;
   }
   .more .gallery {
     width: 0;
@@ -460,9 +489,24 @@ html {
   .more__info {
     width: 100%;
     text-align: center;
+    padding: 1rem;
+    align-items: center;
+  }
+  .upload__box {
+    padding: 1rem;
+    text-align: center;
   }
   .grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .form__container {
+    padding: 1rem;
+  }
+  .add__property {
+    padding: 1rem;
+  }
+  .form__heading {
+    text-align: center;
   }
   .testimonial {
     flex-direction: column-reverse;
@@ -470,6 +514,7 @@ html {
     background: rgba(85, 48, 0, 0.322);
     padding: 1rem;
     color: #fff;
+    text-align: center;
   }
   .cover {
     position: absolute;

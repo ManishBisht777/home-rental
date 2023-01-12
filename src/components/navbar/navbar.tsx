@@ -1,5 +1,7 @@
 import { useState } from "react";
 import logo from "../../images/icons/logo.svg";
+import ham from "../../images/icons/ham.svg";
+import close from "../../images/icons/close.svg";
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState<boolean>(false);
@@ -12,7 +14,7 @@ const Navbar = () => {
         onClick={() => setNavOpen(!navOpen)}
         className="hamburger"
       >
-        ham
+        <img src={ham} alt="" />
       </button>
       <ul className="nav-links">
         <li>Home</li>
@@ -21,7 +23,7 @@ const Navbar = () => {
         <li>Contact Us</li>
       </ul>
       <button onClick={() => setNavOpen(!navOpen)} className="close">
-        close
+        <img src={close} alt="" />
       </button>
     </nav>
   );

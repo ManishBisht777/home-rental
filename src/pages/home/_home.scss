@@ -104,6 +104,13 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 3rem;
+
+  button {
+    background: $orange;
+    padding: 1rem 2rem;
+    color: #fff;
+    border-radius: 3px;
+  }
 }
 
 .property__box {
@@ -167,6 +174,14 @@
 
   h2 {
     font-size: 2rem;
+  }
+
+  button {
+    background: $orange;
+    padding: 1rem 2rem;
+    color: #fff;
+    border-radius: 3px;
+    width: fit-content;
   }
 }
 
@@ -315,14 +330,21 @@
   .feature__unique {
     align-items: center;
     text-align: center;
+    width: 7rem;
   }
   .property {
     padding: 1rem;
     margin-top: 2rem;
   }
+  .property__heading {
+    button {
+      padding: 0.5rem 1rem;
+    }
+  }
 
   .more {
     background-color: rgba(235, 131, 72, 0.082);
+    padding: 2rem;
 
     .gallery {
       width: 0;
@@ -344,10 +366,26 @@
   .more__info {
     width: 100%;
     text-align: center;
+    padding: 1rem;
+    align-items: center;
+  }
+  .upload__box {
+    padding: 1rem;
+    text-align: center;
   }
 
   .grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form__container {
+    padding: 1rem;
+  }
+  .add__property {
+    padding: 1rem;
+  }
+  .form__heading {
+    text-align: center;
   }
 
   .testimonial {
@@ -356,6 +394,7 @@
     background: rgba(85, 48, 0, 0.322);
     padding: 1rem;
     color: #fff;
+    text-align: center;
   }
   .cover {
     position: absolute;

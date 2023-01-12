@@ -137,7 +137,7 @@ const Home = () => {
         </div>
       </section>
       <section className="add__property">
-        <p>
+        <p className="form__heading">
           Your property with us and be Confident that Your Room will be Filled
           Out!
         </p>

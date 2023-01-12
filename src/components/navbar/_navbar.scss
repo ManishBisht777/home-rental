@@ -33,6 +33,13 @@
 @media screen and (max-width: 720px) {
   .hamburger {
     display: flex;
+    img {
+      width: 2rem;
+    }
+  }
+
+  .nav-logo {
+    width: 5rem;
   }
   .navbar {
     justify-content: space-between;
@@ -66,8 +73,11 @@
   .close {
     position: absolute;
     display: flex;
-    top: 3rem;
-    right: 2rem;
+    top: 1rem;
+    right: 1rem;
     z-index: 1;
+    img {
+      width: 2rem;
+    }
   }
 }
