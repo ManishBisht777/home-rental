@@ -11,8 +11,10 @@
 }
 .landing__heading {
   color: #fff;
-  font-size: 2.5rem;
-  width: 32%;
+  font-size: 3rem;
+  width: 40%;
+  font-weight: 600;
+  text-transform: capitalize;
 }
 
 .landing__location {
@@ -39,6 +41,22 @@
 .feature {
   padding: 3rem;
   color: $black;
+
+  h2 {
+    position: relative;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 30%;
+      height: 2px;
+      background: $orange;
+      left: 0;
+    }
+  }
 }
 
 .feature__box {
@@ -120,6 +138,7 @@
   display: flex;
   justify-content: space-between;
   color: $black;
+  position: relative;
 }
 
 .gallery {
@@ -206,7 +225,6 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
   gap: 1rem;
   padding-bottom: 2rem;
 }
@@ -249,7 +267,7 @@
 }
 
 .testi__desc {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .cover {
@@ -270,5 +288,95 @@
   span {
     color: $black;
     font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .landing {
+    flex-direction: column;
+    padding: 3rem;
+    padding-top: 5rem;
+  }
+  .landing__heading {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .feature {
+    padding: 1rem;
+  }
+  .feature__img {
+    display: none;
+  }
+  .feature__list {
+    justify-content: center;
+  }
+  .feature__unique {
+    align-items: center;
+    text-align: center;
+  }
+  .property {
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+
+  .more {
+    background-color: rgba(235, 131, 72, 0.082);
+
+    .gallery {
+      width: 0;
+    }
+    img {
+      display: none;
+    }
+    .more--bg {
+      position: absolute;
+      top: 0;
+      object-fit: cover;
+      left: 0;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+  }
+  .more__info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonial {
+    flex-direction: column-reverse;
+    position: relative;
+    background: rgba(85, 48, 0, 0.322);
+    padding: 1rem;
+    color: #fff;
+  }
+  .cover {
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+    text-align: center;
+  }
+  .user__card {
+    justify-content: center;
+  }
+  .testimonial__card {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
   }
 }

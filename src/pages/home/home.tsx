@@ -110,7 +110,7 @@ const Home = () => {
         <div className="gallery">
           <div className="row">
             <div>
-              <img src={g2} alt="" />
+              <img className="more--bg" src={g2} alt="" />
             </div>
             <div>
               <img src={g1} alt="" />
