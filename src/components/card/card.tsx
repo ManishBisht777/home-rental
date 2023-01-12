@@ -1,5 +1,7 @@
 import p1 from "../../images/property/p1.svg";
 import bed from "../../images/icons/Bed.svg";
+import shower from "../../images/icons/Shower.svg";
+import size from "../../images/icons/Size.svg";
 
 const Card = () => {
   return (
@@ -17,11 +19,11 @@ const Card = () => {
             <p>4</p>
           </div>
           <div className="prop__feature">
-            <img src={bed} alt="no of beds" />
+            <img src={shower} alt="shower" />
             <p>4</p>
           </div>
           <div className="prop__feature">
-            <img src={bed} alt="no of beds" />
+            <img src={size} alt="size" />
             <p>4</p>
           </div>
         </div>

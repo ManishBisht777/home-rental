@@ -2,6 +2,12 @@ import map from "../../images/map.svg";
 import search from "../../images/icons/search.svg";
 import feature from "../../images/feature.svg";
 import houseicon from "../../images/icons/house.svg";
+import money from "../../images/icons/money.svg";
+import shield from "../../images/icons/shield.svg";
+import plant from "../../images/icons/plant.svg";
+import moon from "../../images/icons/moon.svg";
+import stack from "../../images/icons/stack.svg";
+
 import Card from "../../components/card/card";
 import g1 from "../../images/g1.svg";
 import g2 from "../../images/g2.svg";
@@ -43,7 +49,13 @@ const Home = () => {
           <div className="feature__list">
             <div className="feature__unique">
               <div>
-                <img src={houseicon} alt="" />
+                <img src={moon} alt="" />
+              </div>
+              <p>Pay as Little as possible!</p>
+            </div>
+            <div className="feature__unique">
+              <div>
+                <img src={money} alt="" />
               </div>
               <p>Pay as Little as possible!</p>
             </div>
@@ -55,25 +67,19 @@ const Home = () => {
             </div>
             <div className="feature__unique">
               <div>
-                <img src={houseicon} alt="" />
+                <img src={stack} alt="" />
               </div>
               <p>Pay as Little as possible!</p>
             </div>
             <div className="feature__unique">
               <div>
-                <img src={houseicon} alt="" />
+                <img src={plant} alt="" />
               </div>
               <p>Pay as Little as possible!</p>
             </div>
             <div className="feature__unique">
               <div>
-                <img src={houseicon} alt="" />
-              </div>
-              <p>Pay as Little as possible!</p>
-            </div>
-            <div className="feature__unique">
-              <div>
-                <img src={houseicon} alt="" />
+                <img src={shield} alt="" />
               </div>
               <p>Pay as Little as possible!</p>
             </div>
@@ -87,11 +93,6 @@ const Home = () => {
           <button>Viee More</button>
         </div>
         <div className="property__box">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
           <Card />
           <Card />
           <Card />
@@ -154,15 +155,15 @@ const Home = () => {
               </div>
               <div>
                 <p>
-                  name <span>*</span>
+                  Address <span>*</span>
                 </p>
-                <input type="text" placeholder="enter name" />
+                <input type="text" placeholder="enter address" />
               </div>
               <div>
                 <p>
-                  name <span>*</span>
+                  City <span>*</span>
                 </p>
-                <input type="text" placeholder="enter name" />
+                <input type="text" placeholder="enter city" />
               </div>
               <div>
                 <p>

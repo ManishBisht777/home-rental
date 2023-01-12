@@ -45,7 +45,7 @@
   h2 {
     position: relative;
     padding-bottom: 0.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 
     &::before {
       content: "";
@@ -61,11 +61,12 @@
 
 .feature__box {
   display: flex;
+  justify-content: space-around;
 }
 
 .feature__img {
-  width: 40%;
-  padding: 3rem;
+  width: 30%;
+  // padding: 2rem;
 }
 
 .feature__list {
@@ -74,6 +75,7 @@
   gap: 3rem;
   align-items: center;
   align-content: center;
+  width: 50%;
 }
 
 .feature__unique {
@@ -104,6 +106,20 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 3rem;
+
+  h2 {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 1rem;
+      width: 40%;
+      height: 2px;
+      background: $orange;
+      left: 0;
+    }
+  }
 
   button {
     background: $orange;
@@ -286,7 +302,7 @@
 }
 
 .cover {
-  width: 40%;
+  width: 25%;
 }
 
 .user__card {
@@ -326,6 +342,7 @@
   }
   .feature__list {
     justify-content: center;
+    width: 100%;
   }
   .feature__unique {
     align-items: center;

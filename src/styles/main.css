@@ -176,7 +176,7 @@ html {
 .feature h2 {
   position: relative;
   padding-bottom: 0.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .feature h2::before {
   content: "";
@@ -190,11 +190,11 @@ html {
 
 .feature__box {
   display: flex;
+  justify-content: space-around;
 }
 
 .feature__img {
-  width: 40%;
-  padding: 3rem;
+  width: 30%;
 }
 
 .feature__list {
@@ -203,6 +203,7 @@ html {
   gap: 3rem;
   align-items: center;
   align-content: center;
+  width: 50%;
 }
 
 .feature__unique {
@@ -234,6 +235,18 @@ html {
   display: flex;
   justify-content: space-between;
   margin-bottom: 3rem;
+}
+.property__heading h2 {
+  position: relative;
+}
+.property__heading h2::before {
+  content: "";
+  position: absolute;
+  bottom: 1rem;
+  width: 40%;
+  height: 2px;
+  background: #f4511e;
+  left: 0;
 }
 .property__heading button {
   background: #f4511e;
@@ -413,7 +426,7 @@ html {
 }
 
 .cover {
-  width: 40%;
+  width: 25%;
 }
 
 .user__card {
@@ -452,6 +465,7 @@ html {
   }
   .feature__list {
     justify-content: center;
+    width: 100%;
   }
   .feature__unique {
     align-items: center;
@@ -543,6 +557,7 @@ html {
   max-width: 17rem;
   color: #18191f;
   border: 2px solid rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 4px 63px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
 }
 
