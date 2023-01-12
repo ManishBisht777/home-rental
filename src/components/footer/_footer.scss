@@ -1,1 +1,89 @@
 @use "../../styles/assets" as *;
+
+.footer {
+  background: $black;
+  color: rgb(197, 197, 197);
+  padding: 3rem;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-around;
+  img {
+    width: 20%;
+  }
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ph-no {
+  display: flex;
+  justify-content: space-between;
+  a {
+    color: #fff;
+  }
+}
+.socials {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  img {
+    width: 2rem;
+  }
+}
+
+.foot-links {
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
+  gap: 1rem;
+  flex-direction: column;
+  ul {
+    gap: 1rem;
+    display: flex;
+  }
+}
+
+@media screen and(max-width:720px) {
+  .footer {
+    padding: 1rem;
+  }
+  .foot {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    img {
+      width: 50%;
+    }
+  }
+  .icons {
+    img {
+      width: 1.5rem;
+    }
+  }
+
+  .contact {
+    text-align: center;
+  }
+  .socials {
+    flex-direction: column;
+  }
+
+  .foot-links {
+    text-align: center;
+    ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
