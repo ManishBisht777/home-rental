@@ -25,11 +25,18 @@
 .location__box {
   background: white;
   border-radius: 10px;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   display: flex;
   gap: 1rem;
   margin: 0 1.2rem;
   justify-content: space-between;
+
+  select {
+    padding: 0.5rem 1rem;
+    border: 1px solid $gray;
+    border-radius: 3px;
+    background: white;
+  }
 
   button {
     background: $blue;
@@ -326,7 +333,7 @@
   .landing {
     flex-direction: column;
     padding: 3rem;
-    padding-top: 5rem;
+    padding-top: 8rem;
   }
   .landing__heading {
     width: 100%;
