@@ -13,6 +13,7 @@ const Navbar = () => {
         aria-expanded={navOpen}
         onClick={() => setNavOpen(!navOpen)}
         className="hamburger"
+        aria-label="open menu button"
       >
         <img src={ham} alt="" />
       </button>
@@ -22,7 +23,11 @@ const Navbar = () => {
         <li>Tenants</li>
         <li>Contact Us</li>
       </ul>
-      <button onClick={() => setNavOpen(!navOpen)} className="close">
+      <button
+        aria-label="close menu button"
+        onClick={() => setNavOpen(!navOpen)}
+        className="close"
+      >
         <img src={close} alt="" />
       </button>
     </nav>
